@@ -43,7 +43,7 @@ class Log
     {
         $logger = new \Monolog\Logger('http');
         $handler = new \Monolog\Handler\StreamHandler(
-            $log_path . 'http-'. date('Y-m-d') .'.log',
+            $log_path,
             \Monolog\Logger::DEBUG
         );
         $formatter = new \Monolog\Formatter\LineFormatter(

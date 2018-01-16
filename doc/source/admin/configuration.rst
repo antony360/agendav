@@ -70,7 +70,7 @@ modify,  and start configuring your instance.
 
    Full path where logs will be created. Add a trailing slash. Example::
 
-    $app['log.path'] = '/var/log/agendav/';
+    $app['log.path'] = '/var/log/agendav/' . date('Y-m-d') . '.log';
 
    Make sure the user that runs your web server has write permission on that
    directory.

@@ -19,7 +19,7 @@
  *  along with AgenDAV.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-$app['monolog.logfile'] = function($app) { return $app['log.path'] . '/' . date('Y-m-d') . '.log'; };
+$app['monolog.logfile'] = function($app) { return $app['log.path']; };
 $app['monolog.level'] = function($app) { return $app['log.level']; };
 $app['locale'] = function($app) { return $app['defaults.language']; };
 

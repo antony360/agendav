@@ -34,7 +34,7 @@ $app['db.options'] = [
 $app['csrf.secret'] = 'lkjihgfedcba';
 
 // Log path
-$app['log.path'] = __DIR__.'/../var/log/';
+$app['log.path'] = __DIR__.'/../var/log/' . date('Y-m-d') . '.log';
 
 // Logging level
 $app['log.level'] = 'INFO';
